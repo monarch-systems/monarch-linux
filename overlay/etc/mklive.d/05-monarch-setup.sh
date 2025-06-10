@@ -19,6 +19,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 echo ">> Monarch: Enabling default systemd services..."
 systemctl enable iptables.service
 systemctl enable sshd.service
+systemctl enable dhcpcd.service
+systemctl enable bluetooth.service
+
 # systemctl enable NetworkManager.service # Example if you added NetworkManager
 # ... add any other services you want enabled
 
