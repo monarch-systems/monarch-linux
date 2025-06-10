@@ -22,9 +22,4 @@ systemctl enable sshd.service
 # systemctl enable NetworkManager.service # Example if you added NetworkManager
 # ... add any other services you want enabled
 
-# 4. (Optional) Set a default password for the root and live user
-# This is useful for testing the live ISO.
-echo 'root:voidlinux' | chpasswd
-echo 'void:voidlinux' | chpasswd
-
 echo ">> Monarch: Setup complete."
